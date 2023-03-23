@@ -1,0 +1,25 @@
+/*to create structure named Employee with the following members. 
+id, name, Dob (Date of birth), salary. Store values into Employee and print them.*/
+#include<stdio.h>
+struct Employee{
+	int id;
+	char name[20];
+	int Dob;
+	float sal;
+};
+int main()
+{
+	struct Employee emp;
+	emp.id=101;
+	printf("Enter Employee name:");
+	gets(emp.name);
+	printf("Enter Date of birth:");
+	scanf("%d",&emp.Dob);
+	printf("Enter the salary:");
+	scanf("%f",&emp.sal);
+	printf("\n");
+	printf("Employee ID=%d",emp.id);
+	printf("\nEmployee name=%s",emp.name);
+	printf("\nDate of birth=%d",emp.Dob);
+	printf("\nSalary=%.2f",emp.sal);
+}
