@@ -1,0 +1,26 @@
+/*to create structure named Student with the following members. id, name, m1, m2, m3, .
+Store values into Student and print them along with total and average marks.*/ 
+#include<stdio.h>
+struct Student{
+	int id;
+	char name[20];
+	int m1,m2,m3;
+	
+};
+int main()
+{
+	struct Student stu;
+	stu.id=101;
+	printf("Enter student name:");
+	gets(stu.name);
+	printf("Enter the marks:");
+	scanf("%d%d%d",&stu.m1,&stu.m2,&stu.m3);
+	int tot=stu.m1+stu.m2+stu.m3;
+	float avg=tot/3;
+	printf("\n");
+	printf("ID=%d",stu.id);
+	printf("\nStudent name=%s",stu.name);
+	printf("\nStudent marks=\n%d\n%d\n%d",stu.m1,stu.m2,stu.m3);
+	printf("\nTotal marks=%d",tot);
+	printf("\nAverage marks=%.2f",avg);
+}
