@@ -1,0 +1,24 @@
+/*to create structure named Book with the following members. 
+id, title, author, price. Store values into Book and print them*/
+#include<stdio.h>
+struct Book{
+	int id;
+	char title[20];
+	char author[20];
+	float price;
+};
+int main()
+{
+	struct Book b1;
+	b1.id=101;
+	printf("Enter Book title:");
+	gets(b1.title);
+	printf("Enter author name:");
+	gets(b1.author);
+	b1.price=2000;
+	printf("\n");
+	printf("ID=%d",b1.id);
+	printf("\nTitle=%s",b1.title);
+	printf("\nAuthor=%s",b1.author);
+	printf("\nPrice=%.2f",b1.price);
+}
